@@ -1,0 +1,72 @@
+{
+  "name": "react-app-table-plan",
+  "version": "0.0.1",
+  "description": "React application",
+  "author": "Olga Pigareva",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pigareva/react-desk-plan"
+  },
+  "jest": {
+    "setupTestFrameworkScriptFile": "./setupTests.js"
+  },
+  "scripts": {
+    "start": "webpack serve --watch",
+    "build": "npx webpack --env prod",
+    "server": "node ./server/server.js",
+    "test": "jest",
+    "test-update": "jest --updateSnapshot"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-minify-webpack-plugin": "^0.2.0",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-react": "^6.24.1",
+    "css-loader": "^0.28.9",
+    "enzyme": "^3.3.0",
+    "enzyme-adapter-react-16": "^1.15.5",
+    "enzyme-redux": "^0.2.1",
+    "eslint": "^4.19.1",
+    "eslint-config-airbnb": "^16.1.0",
+    "eslint-plugin-import": "^2.11.0",
+    "eslint-plugin-jest": "^21.17.0",
+    "eslint-plugin-jsx-a11y": "^6.0.3",
+    "eslint-plugin-react": "^7.7.0",
+    "file-loader": "^1.1.11",
+    "jest": "^23.1.0",
+    "node-sass": "^4.14.1",
+    "nodemon": "^1.17.4",
+    "redux-test-utils": "^0.2.2",
+    "sass-loader": "^7.0.1",
+    "style-loader": "^0.21.0",
+    "webpack": "^5",
+    "webpack-cli": "^4.3.1",
+    "webpack-dev-server": "^3.11.1"
+  },
+  "resolutions": {
+    "chokidar": "^3.4.0"
+  },
+  "dependencies": {
+    "babel-jest": "^23.0.1",
+    "babel-runtime": "^6.26.0",
+    "body-parser": "^1.18.2",
+    "bootstrap": "^4.5.3",
+    "cors": "^2.8.4",
+    "express": "^4.16.3",
+    "jquery": "^3.3.1",
+    "mongo": "^0.1.0",
+    "mongoose": "^5.11.11",
+    "prop-types": "^15.7.2",
+    "react": "^16.0.0",
+    "react-dom": "^16.14.0",
+    "react-octicons": "^0.2.0",
+    "react-redux": "^5.0.7",
+    "react-test-renderer": "^16.4.1",
+    "reactstrap": "^6.0.1",
+    "redux": "^4.0.0"
+  }
+}

@@ -1,0 +1,145 @@
+#root {
+
+  .lato {
+    font-size: 14px;
+    font-weight: 400;
+    text-rendering: optimizelegibility;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  @keyframes header-background {
+    from {
+      background-color: darkgrey;
+    }
+    50% {
+      background-color: #f1ff0e;
+    }
+    to {
+      background-color: darkgrey;
+    }
+  }
+
+  header {
+    width: 100%;
+    min-height: 50px;
+    background-color: darkgrey;
+    color: #F6F6F6;
+    position: relative;
+    animation: header-background 54s linear paused;
+  }
+
+  .header-animation {
+    width: 100%;
+    min-height: 50px;
+    background-color: darkgrey;
+    color: #F6F6F6;
+    position: relative;
+    animation: header-background 54s linear running;
+  }
+
+  @keyframes sun {
+    from {
+      left: 5%;
+      bottom: 8px;
+      opacity: 0;
+    }
+    1% {
+      opacity: 1;
+    }
+    25% {
+      bottom: 30px;
+    }
+    50% {
+      bottom: 50px;
+    }
+    75% {
+      bottom: 30px;
+    }
+    99% {
+      opacity: 1;
+    }
+    to {
+      left: 95%;
+      bottom: 8px;
+      opacity: 0;
+    }
+  }
+
+  .sun-box-running {
+    position: absolute;
+    color: #f1ff0e;
+    text-shadow: 0 0 5px black;
+    bottom: 0;
+    animation: sun 54s linear running;
+    opacity: 0;
+  }
+
+  .sun-box {
+    position: absolute;
+    color: #f1ff0e;
+    text-shadow: 0 0 5px black;
+    bottom: 0;
+    animation: sun 54s linear paused;
+    opacity: 0;
+  }
+
+  .sun-symbol {
+    position: relative;
+    font-size: 20px;
+  }
+
+  .desk-flex-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-content: space-around;
+    min-height: 100px;
+    margin: 0 auto;
+  }
+
+  .desk-flex-block {
+    border: 1px gray dashed;
+    min-width: 250px;
+    min-height: 100px;
+    margin-bottom: 20px;
+    align-content: space-around;
+    background-color: darkgray !important;
+  }
+
+  .desk-at-work {
+    background-size: 100% auto;
+  }
+
+  .table-flex-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
+  .table-flex-block {
+    border: 3px #6c757d solid;
+    margin: 10px;
+    background-color: lightgray;
+    color: #6c757d;
+  }
+
+  .clock-button {
+    width: 70px;
+    font-size: 1rem;
+    padding-top: 12px;
+    font-weight: 400;
+  }
+
+  .clock{
+    margin-bottom: auto;
+    text-align: left;
+  }
+
+  header .clock {
+    float: left;
+  }
+
+  .greeting {
+    text-align: right;
+  }
+}
